@@ -588,6 +588,19 @@ ul {
   .nav-logo img { height: 45px; max-width: 180px; }
   .btn-nav-cta { padding: 0.5rem 1rem; font-size: 0.8rem; }
   
+  /* Hero constraints for vertical headxmobile.png */
+  .image-hero {
+    padding-top: 70px; /* Reduce buffer so the graphic pushes higher */
+    padding-bottom: 20px;
+  }
+  .hero-banner-asset {
+    max-width: 100vw; /* Stretch fully edge to edge */
+    width: 100%;
+    height: auto;
+    max-height: 85vh; /* Keep it perfectly contained slightly below viewport */
+    object-fit: contain;
+  }
+
   /* Layout adjustments */
   .about-grid, .audience-partner-grid, .footer-grid { grid-template-columns: 1fr; }
   
