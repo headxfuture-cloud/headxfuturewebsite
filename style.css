@@ -178,12 +178,13 @@ ul {
 
 /* Image Hero */
 .image-hero {
-  min-height: 90vh;
+  min-height: 100vh; /* Scaled seamlessly to full viewport height */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 100px; /* Buffer for fixed nav */
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   background-color: var(--bg-primary);
 }
 
@@ -191,7 +192,7 @@ ul {
   width: 100%;
   max-width: 1200px;
   height: auto;
-  max-height: 80vh;
+  max-height: 90vh; /* Increased inner artwork span headroom */
   object-fit: contain;
   margin: 0 auto;
   display: block;
