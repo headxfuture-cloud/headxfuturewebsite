@@ -152,8 +152,8 @@ ul {
 }
 
 .nav-logo img {
-  height: 140px; /* Tripled sizing to accommodate heavily padded custom logo bounds */
-  max-width: 600px;
+  height: 45px; /* Normalized standard size */
+  max-width: 250px;
   object-fit: contain;
   display: block;
 }
