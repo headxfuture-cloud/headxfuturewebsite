@@ -127,13 +127,60 @@ ul {
   border-bottom: 1px solid var(--border-color);
 }
 
+/* Floating Navbar (Diabrowser Ref) */
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+}
+
+.nav-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 40px; /* Minimal sizing */
+  width: auto;
+  display: block;
+}
+
+.btn-nav-cta {
+  background: #111827;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  font-family: var(--font-body);
+}
+
+.btn-nav-cta:hover {
+  background: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
 /* Image Hero */
 .image-hero {
   min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 100px; /* Buffer for fixed nav */
   padding-bottom: 40px;
   background-color: var(--bg-primary);
 }
