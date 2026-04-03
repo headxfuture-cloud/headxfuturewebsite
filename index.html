@@ -25,8 +25,11 @@
     <!-- Image Hero Section (Replaces Nav & Geometric Layout) -->
     <header class="image-hero">
       <div class="container text-center">
-        <!-- Place the image named hero-banner.jpeg into a 'public' directory in the root -->
-        <img src="/hero-banner.jpeg" alt="HeadX Future 2.0" class="hero-banner-asset" />
+        <!-- Responsive Art Direction: Mobile uses PNG, Desktop uses JPEG -->
+        <picture>
+          <source media="(max-width: 768px)" srcset="/headxmobile.png">
+          <img src="/hero-banner.jpeg" alt="HeadX Future 2.0" class="hero-banner-asset" />
+        </picture>
         
         <div class="hero-actions mt-4 fade-up">
            <div class="glass-countdown" id="countdown">
