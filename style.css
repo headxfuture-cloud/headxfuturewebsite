@@ -152,8 +152,8 @@ ul {
 }
 
 .nav-logo img {
-  height: 45px; /* Normalized standard size */
-  max-width: 250px;
+  height: 70px; /* Precise height specified by user */
+  max-width: 350px;
   object-fit: contain;
   display: block;
 }
