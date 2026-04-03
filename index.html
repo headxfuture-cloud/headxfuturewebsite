@@ -13,39 +13,68 @@
   </head>
   <body>
     <!-- Navbar -->
-    <header class="navbar">
-      <div class="logo">HeadxFuture<span>2.0</span></div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#speakers">Speakers</a>
-        <a href="#agenda">Agenda</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-      <a href="https://makemypass.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Get Tickets</a>
+    <header class="navbar light-nav">
+      <div class="logo">
+        <div class="logo-stack">
+          <span class="headword">headword™<br>school of business</span>
+        </div>
+        <div class="logo-stack">
+          <span class="edc">Economic<br>Development<br>Council</span>
+        </div>
+      </div>
+      <div class="brand-2-0">
+        <span class="two-dot-oh">2.0</span>
+      </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
-      <div class="hero-bg-layer"></div>
-      <div class="container hero-content">
-        <div class="badge">Next Generation Event</div>
-        <h1 class="hero-title">Shaping the <span class="gradient-text">Future</span></h1>
-        <p class="hero-tagline">Join the revolution of innovation, technology, and visionary leadership.</p>
-        <div class="event-details">
-          <span>📅 Coming Soon</span> • <span>📍 Virtual / TBA</span>
-        </div>
+    <section id="hero" class="hero minimal-hero">
+      <div class="container hero-grid-new">
         
-        <!-- Countdown Timer -->
-        <div class="countdown" id="countdown">
-          <div class="timer-box"><span id="days">00</span><small>Days</small></div>
-          <div class="timer-box"><span id="hours">00</span><small>Hours</small></div>
-          <div class="timer-box"><span id="minutes">00</span><small>Minutes</small></div>
-          <div class="timer-box"><span id="seconds">00</span><small>Seconds</small></div>
+        <!-- Left Side: Title & Association -->
+        <div class="hero-left">
+          <p class="association-text">
+            Headword School of Business<br>
+            in association with<br>
+            Economic Development Council
+          </p>
+          <h1 class="hero-title-minimal">
+            HeadX<br>Future 2.0
+          </h1>
         </div>
 
-        <div class="hero-cta">
-          <a href="https://makemypass.com" class="btn btn-large btn-glow" target="_blank" rel="noopener noreferrer">Register Now</a>
+        <!-- Center: Graphic / Conclave -->
+        <div class="hero-center">
+          <div class="conclave-graphic">
+            <svg viewBox="0 0 200 200" width="200" height="200">
+              <path id="curve" d="M 40 100 A 60 60 0 0 1 160 100" fill="transparent" />
+              <text font-family="Inter, sans-serif" font-size="14" fill="#333" letter-spacing="1.5">
+                <textPath href="#curve">Business Conclave 2026</textPath>
+              </text>
+            </svg>
+            <div class="geometric-x">
+              <!-- Recreated colorful Chair/X logo -->
+              <div class="shape bar-blue"></div>
+              <div class="shape bar-red"></div>
+              <div class="shape bar-yellow"></div>
+              <div class="shape bar-green"></div>
+              <div class="shape bar-orange"></div>
+            </div>
+          </div>
         </div>
+
+        <!-- Right Side: Dates and Location -->
+        <div class="hero-right">
+          <div class="date-blocks">
+            <div class="date-block red-bg">29</div>
+            <div class="date-block green-bg">30</div>
+          </div>
+          <p class="event-meta">
+            April 2026 | 9 AM – 8 PM<br>
+            Aspin Courtyards, Kozhikode
+          </p>
+        </div>
+
       </div>
     </section>
 
