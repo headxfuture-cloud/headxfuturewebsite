@@ -588,6 +588,13 @@ ul {
   /* Layout adjustments */
   .about-grid, .audience-partner-grid, .footer-grid { grid-template-columns: 1fr; }
   
+  /* Speaker Grid mobile overrides */
+  .speakers-grid.pure-images {
+    grid-template-columns: 1fr 1fr; /* Force 2 items per row on mobile */
+    gap: 1rem; /* Shrink the gap to fit them precisely */
+    margin-top: 2rem;
+  }
+  
   /* Countdown optimizations */
   .glass-countdown { 
     gap: 0.5rem; 
