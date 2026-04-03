@@ -152,8 +152,9 @@ ul {
 }
 
 .nav-logo img {
-  height: 40px; /* Minimal sizing */
-  width: auto;
+  height: 65px; /* Increased sizing for readability */
+  max-width: 300px;
+  object-fit: contain;
   display: block;
 }
 
