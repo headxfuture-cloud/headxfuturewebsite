@@ -196,22 +196,61 @@ ul {
   display: block;
 }
 
-.hero-actions {
+/* Glassmorphism Countdown */
+.glass-countdown {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
+  align-items: center;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 1.5rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+  margin: 1rem auto 0;
+  max-width: fit-content;
 }
 
-.btn-ghost {
-  background: white;
-  border: 2px solid #e5e7eb;
-  color: #1a1a1a;
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70px;
 }
 
-.btn-ghost:hover {
-  border-color: #cbd5e1;
-  background: #f1f5f9;
+.countdown-item span {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #3b82f6, #ef4444);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1;
+}
+
+.countdown-item p {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #4b5563;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 0.5rem;
+}
+
+.countdown-divider {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #d1d5db;
+  margin-top: -1.5rem;
+}
+
+.countdown-finished {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ef4444;
 }
 
 .fade-up {
@@ -543,6 +582,9 @@ ul {
 
 @media (max-width: 768px) {
   .about-grid, .audience-partner-grid, .footer-grid { grid-template-columns: 1fr; }
-  .hero-actions { flex-direction: column; width: 100%; max-width: 300px; margin: 2rem auto 0; }
+  .glass-countdown { gap: 1rem; padding: 1.5rem; }
+  .countdown-item { min-width: 50px; }
+  .countdown-item span { font-size: 2rem; }
+  .countdown-divider { font-size: 1.5rem; margin-top: -1rem; }
 }
 

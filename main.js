@@ -1,7 +1,10 @@
-// Countdown Timer Logic
-const countDownDate = new Date().getTime() + (30 * 24 * 60 * 60 * 1000); // 30 days from now
+// Countdown Timer Logic targeting April 29, 2026
+const countDownDate = new Date("April 29, 2026 09:00:00").getTime();
 
 const updateTimer = () => {
+  const daysEl = document.getElementById("days");
+  if (!daysEl) return;
+
   const now = new Date().getTime();
   const distance = countDownDate - now;
 
@@ -10,14 +13,14 @@ const updateTimer = () => {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("days").innerText = days.toString().padStart(2, '0');
+  daysEl.innerText = days.toString().padStart(2, '0');
   document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
   document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
   document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
 
   if (distance < 0) {
     clearInterval(timerInterval);
-    document.getElementById("countdown").innerHTML = "<h2>Event has Started!</h2>";
+    document.getElementById("countdown").innerHTML = "<h2 class='countdown-finished'>Event has Started!</h2>";
   }
 };
 
