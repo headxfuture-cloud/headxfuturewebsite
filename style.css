@@ -1,4 +1,8 @@
 :root {
+  /* Typography - Helvetica Now */
+  --font-heading: 'Helvetica Now Display', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Helvetica Now Text', 'Helvetica Neue', Arial, sans-serif;
+
   /* Colors - Minimal White Aesthetic */
   --bg-primary: #ffffff;
   --bg-secondary: #f9fafb;
@@ -13,10 +17,6 @@
   --neon-glow: rgba(0, 0, 0, 0.05);
 
   --border-color: #e5e7eb;
-
-  /* Typography */
-  --font-heading: 'Outfit', sans-serif;
-  --font-body: 'Inter', sans-serif;
 
   /* Layout */
   --container-width: 1200px;
