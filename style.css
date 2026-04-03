@@ -184,6 +184,13 @@ ul {
   top: 45%;
   transform: translateY(-50%);
   z-index: 2;
+  opacity: 0;
+  animation: heroSlideLeft 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes heroSlideLeft {
+  0% { transform: translateX(-40px) translateY(-50%); opacity: 0; }
+  100% { transform: translateX(0) translateY(-50%); opacity: 1; }
 }
 
 .hero-left .association-text {
@@ -209,6 +216,13 @@ ul {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  opacity: 0;
+  animation: heroFadeCenter 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+
+@keyframes heroFadeCenter {
+  0% { transform: translate(-50%, -40%); opacity: 0; }
+  100% { transform: translate(-50%, -50%); opacity: 1; }
 }
 
 .conclave-graphic {
@@ -238,13 +252,20 @@ ul {
 .geometric-x .shape {
   position: absolute;
   border-radius: 50px;
+  transition: transform 0.5s ease;
+  box-shadow: inset -2px -2px 10px rgba(0,0,0,0.1); /* Slight 3D volume */
 }
 
-.bar-blue { width: 30px; height: 90px; background: #3b82f6; top: 0; left: 10px; transform: rotate(20deg); }
-.bar-red { width: 90px; height: 30px; background: #ef4444; top: 50px; left: 30px; }
-.bar-yellow { width: 80px; height: 30px; background: #eab308; top: 85px; left: 35px; }
-.bar-green { width: 30px; height: 90px; background: #22c55e; top: 60px; left: 10px; transform: rotate(-40deg); }
-.bar-orange { width: 90px; height: 30px; background: #f97316; top: 120px; left: 15px; transform: rotate(30deg); }
+.geometric-x .shape:hover {
+  transform: scale(1.05); /* Interactive bounce */
+}
+
+/* Perfect alignment mimicking the custom logo mark */
+.bar-blue { width: 32px; height: 85px; background: #3b82f6; top: 0; left: 10px; transform: rotate(-25deg); }
+.bar-green { width: 32px; height: 85px; background: #22c55e; top: 60px; left: 10px; transform: rotate(25deg); }
+.bar-red { width: 90px; height: 32px; background: #ef4444; top: 35px; left: 40px; }
+.bar-yellow { width: 70px; height: 32px; background: #eab308; top: 75px; left: 40px; }
+.bar-orange { width: 85px; height: 32px; background: #f97316; top: 115px; left: 30px; transform: rotate(30deg); }
 
 
 .hero-right {
@@ -256,6 +277,13 @@ ul {
   align-items: flex-end;
   text-align: right;
   z-index: 2;
+  opacity: 0;
+  animation: heroSlideRight 1s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+}
+
+@keyframes heroSlideRight {
+  0% { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
 }
 
 .date-blocks {
