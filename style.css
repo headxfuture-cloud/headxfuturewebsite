@@ -226,17 +226,19 @@ ul {
   font-family: var(--font-heading);
   font-size: 3rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #3b82f6, #ef4444);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
   line-height: 1;
 }
 
+/* 2.0 Brand Pattern Color Chunking */
+#days { color: #3b82f6; } /* Blue */
+#hours { color: #ef4444; } /* Red */
+#minutes { color: #eab308; } /* Yellow */
+#seconds { color: #22c55e; } /* Green */
+
 .countdown-item p {
   font-size: 0.85rem;
-  font-weight: 600;
-  color: #4b5563;
+  font-weight: 700;
+  color: #1a1a1a;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-top: 0.5rem;
@@ -245,7 +247,7 @@ ul {
 .countdown-divider {
   font-size: 2rem;
   font-weight: 800;
-  color: #d1d5db;
+  color: #f97316; /* Orange */
   margin-top: -1.5rem;
 }
 
