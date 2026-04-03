@@ -164,19 +164,26 @@ ul {
 
 /* Minimal Hero */
 .minimal-hero {
-  min-height: 90vh;
+  position: relative;
+  min-height: calc(100vh - 120px);
   display: flex;
   align-items: center;
-  padding-top: 120px;
   background-color: var(--bg-primary);
+  overflow: hidden;
 }
 
 .hero-grid-new {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: end;
-  gap: 2rem;
+  position: relative;
   width: 100%;
+  height: calc(100vh - 150px);
+}
+
+.hero-left {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 2;
 }
 
 .hero-left .association-text {
@@ -184,30 +191,30 @@ ul {
   color: #4b5563;
   margin-bottom: 2rem;
   font-family: var(--font-body);
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .hero-title-minimal {
-  font-size: 5.5rem;
+  font-size: 6rem;
   font-weight: 800;
-  line-height: 1;
+  line-height: 0.95;
   color: #1a1a1a;
-  letter-spacing: -2px;
+  letter-spacing: -3px;
 }
 
 .hero-center {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  align-items: center;
-  height: 100%;
-  padding-bottom: 2rem;
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .conclave-graphic {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,15 +222,17 @@ ul {
 
 .conclave-graphic svg {
   position: absolute;
-  top: -20px;
+  top: -30px;
   left: -20px;
+  width: 120%;
+  height: 120%;
   transform: rotate(-15deg);
 }
 
 .geometric-x {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
 }
 
 .geometric-x .shape {
@@ -239,17 +248,20 @@ ul {
 
 
 .hero-right {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
-  padding-bottom: 2rem;
+  z-index: 2;
 }
 
 .date-blocks {
   display: flex;
-  gap: 10px;
-  margin-bottom: 1.5rem;
+  gap: 12px;
+  margin-bottom: 1rem;
 }
 
 .date-block {
@@ -590,19 +602,27 @@ ul {
 
 /* Responsive */
 @media (max-width: 1024px) {
+  .minimal-hero { padding-top: 150px; height: auto; }
   .hero-grid-new {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 3rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
   }
-  .hero-left .association-text { margin-bottom: 1rem; }
-  .hero-right { align-items: center; text-align: center; margin-top: 2rem; }
-  .conclave-graphic { margin: 0 auto; }
+  .hero-left, .hero-center, .hero-right {
+    position: static;
+    transform: none;
+    text-align: center;
+  }
+  .hero-right {
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
   .hero-title-minimal { font-size: 3.5rem; }
   .about-grid, .audience-partner-grid, .footer-grid { grid-template-columns: 1fr; }
-  .dashboard-links { display: none; }
+  .date-blocks { justify-content: center; }
 }
 
