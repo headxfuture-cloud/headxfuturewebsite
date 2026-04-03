@@ -275,22 +275,40 @@ ul {
   align-items: center;
 }
 
+.about-text h2 {
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
 .value-props {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 2rem;
-  margin-top: 2rem;
 }
 
 .value-item h3 {
-  font-size: 1.25rem;
+  color: var(--accent-primary);
   margin-bottom: 0.5rem;
-  color: var(--accent-secondary);
+  font-size: 1.25rem;
 }
 
-.value-item p {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
+.about-video-player {
+  width: 100%;
+  max-height: 550px;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+  background-color: #0f172a; /* Acts as dark fallback frame */
+}
+
+.about-video-player:hover {
+  transform: translateY(-8px);
 }
 
 .glass-card {
