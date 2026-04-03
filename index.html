@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HeadxFuture 2.0 - A static event website for presenting event information and driving user registrations." />
+    <title>HeadxFuture 2.0</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">HeadxFuture<span>2.0</span></div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="https://makemypass.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Get Tickets</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-bg-layer"></div>
+      <div class="container hero-content">
+        <div class="badge">Next Generation Event</div>
+        <h1 class="hero-title">Shaping the <span class="gradient-text">Future</span></h1>
+        <p class="hero-tagline">Join the revolution of innovation, technology, and visionary leadership.</p>
+        <div class="event-details">
+          <span>📅 Coming Soon</span> • <span>📍 Virtual / TBA</span>
+        </div>
+        
+        <!-- Countdown Timer -->
+        <div class="countdown" id="countdown">
+          <div class="timer-box"><span id="days">00</span><small>Days</small></div>
+          <div class="timer-box"><span id="hours">00</span><small>Hours</small></div>
+          <div class="timer-box"><span id="minutes">00</span><small>Minutes</small></div>
+          <div class="timer-box"><span id="seconds">00</span><small>Seconds</small></div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="https://makemypass.com" class="btn btn-large btn-glow" target="_blank" rel="noopener noreferrer">Register Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section dark-section">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2 class="section-title">About the <span class="gradient-text">Event</span></h2>
+          <p>HeadxFuture 2.0 is the definitive gathering for creators, founders, investors, and tech professionals looking to shape tomorrow. We provide a platform bridging cutting-edge technology with real-world applications.</p>
+          <div class="value-props">
+            <div class="value-item">
+              <h3>Vision</h3>
+              <p>Fostering an ecosystem of innovation to tackle global challenges.</p>
+            </div>
+            <div class="value-item">
+              <h3>Impact</h3>
+              <p>Connecting 5000+ professionals for unparalleled networking and growth.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="glass-card decor-card">
+            <div class="glow-sphere"></div>
+            <h3>Transforming Ideas</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="section">
+      <div class="container">
+        <h2 class="section-title text-center">Visionary <span class="gradient-text">Speakers</span></h2>
+        <div class="speakers-grid">
+          <!-- Speaker 1 -->
+          <div class="speaker-card">
+            <div class="img-wrapper">
+              <img src="https://ui-avatars.com/api/?name=Jane+Doe&background=27272a&color=fff&size=200" alt="Jane Doe" />
+            </div>
+            <div class="speaker-info">
+              <h3>Jane Doe</h3>
+              <p class="designation">Chief Technology Officer</p>
+              <p class="company">InnovateTech</p>
+            </div>
+          </div>
+          <!-- Speaker 2 -->
+          <div class="speaker-card">
+            <div class="img-wrapper">
+              <img src="https://ui-avatars.com/api/?name=John+Smith&background=27272a&color=fff&size=200" alt="John Smith" />
+            </div>
+            <div class="speaker-info">
+              <h3>John Smith</h3>
+              <p class="designation">Founder & CEO</p>
+              <p class="company">Future Ventures</p>
+            </div>
+          </div>
+          <!-- Speaker 3 -->
+          <div class="speaker-card">
+            <div class="img-wrapper">
+              <img src="https://ui-avatars.com/api/?name=Alice+Wonder&background=27272a&color=fff&size=200" alt="Alice Wonder" />
+            </div>
+            <div class="speaker-info">
+              <h3>Alice Wonder</h3>
+              <p class="designation">Lead Designer</p>
+              <p class="company">Creative Minds</p>
+            </div>
+          </div>
+          <!-- Speaker 4 -->
+          <div class="speaker-card">
+            <div class="img-wrapper">
+              <img src="https://ui-avatars.com/api/?name=Bob+Builder&background=27272a&color=fff&size=200" alt="Bob Builder" />
+            </div>
+            <div class="speaker-info">
+              <h3>Bob Builder</h3>
+              <p class="designation">Head of Engineering</p>
+              <p class="company">ConstructAI</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events / Sessions & Agenda Section -->
+    <section id="agenda" class="section dark-section">
+      <div class="container">
+        <div class="agenda-header text-center">
+          <h2 class="section-title">Event <span class="gradient-text">Tracks & Agenda</span></h2>
+          <p>Keynotes, Panels, Workshops, and Networking</p>
+        </div>
+
+        <div class="agenda-timeline">
+          <!-- Timeline Item -->
+          <div class="timeline-item">
+            <div class="time">09:00 AM</div>
+            <div class="timeline-content">
+              <h4>Opening Keynote: The AI Revolution</h4>
+              <p>A deep dive into how AI is restructuring the enterprise landscape.</p>
+              <span class="track-tag">Keynote</span>
+            </div>
+          </div>
+          <!-- Timeline Item -->
+          <div class="timeline-item">
+            <div class="time">11:30 AM</div>
+            <div class="timeline-content">
+              <h4>Panel: Investing in Web3</h4>
+              <p>Top investors discuss the future of decentralized tech.</p>
+              <span class="track-tag">Panel</span>
+            </div>
+          </div>
+          <!-- Timeline Item -->
+          <div class="timeline-item">
+            <div class="time">02:00 PM</div>
+            <div class="timeline-content">
+              <h4>Workshop: Design Systems</h4>
+              <p>Hands-on session on building scalable design architecture.</p>
+              <span class="track-tag">Workshop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Target Audience & Partners -->
+    <section class="section">
+      <div class="container audience-partner-grid">
+        <div class="audience">
+          <h3 class="mb-4">Who Should <span class="gradient-text">Attend?</span></h3>
+          <ul class="audience-list">
+            <li>👨‍🎓 Students & Researchers</li>
+            <li>💼 Professionals & Execs</li>
+            <li>🚀 Founders & Entrepreneurs</li>
+            <li>💸 Investors</li>
+            <li>🎨 Creators & Organizations</li>
+          </ul>
+        </div>
+        <div class="partners">
+          <h3 class="mb-4">Our <span class="gradient-text">Partners</span></h3>
+          <div class="partner-logos">
+            <div class="logo-box">Logo 1</div>
+            <div class="logo-box">Logo 2</div>
+            <div class="logo-box">Logo 3</div>
+            <div class="logo-box">Logo 4</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section dark-section">
+      <div class="container">
+        <h2 class="section-title text-center">Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How does the registration process work?</h3>
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>All tickets are managed smoothly via our partner platform Makemypass. Simply click "Register Now" to be redirected.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Who is eligible to participate?</h3>
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>HeadxFuture 2.0 is open to anyone passionate about technology, business, and design.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Will the sessions be recorded?</h3>
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, registered attendees will have access to on-demand recordings of the main keynotes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div class="footer-info">
+          <div class="logo mb-4">HeadxFuture<span>2.0</span></div>
+          <p>Building the next generation of tech leaders.</p>
+          <div class="contact-details mt-4">
+            <p>📧 <a href="mailto:contact@headxfuture.test">contact@headxfuture.test</a></p>
+            <p>📞 <a href="tel:+1234567890">+1 234 567 890</a></p>
+          </div>
+        </div>
+        <div class="footer-socials">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">YouTube</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 HeadxFuture 2.0. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
