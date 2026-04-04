@@ -818,8 +818,10 @@ ul {
   }
 
   .speakers-main-title { 
-    font-size: 2.75rem; 
-    margin-bottom: 3rem; 
+    font-size: 3.25rem; 
+    margin-bottom: 3.5rem;
+    gap: 0.5rem;
+    letter-spacing: -2px;
   }
 
   #about .section-title { 
@@ -861,19 +863,27 @@ ul {
     height: 200px;
   }
 
-  /* Speaker Grid mobile overrides */
   .speakers-main-title {
     font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 5rem;
-    font-weight: 300;
-    margin-bottom: 5rem;
+    font-size: 6.5rem;
     color: var(--text-primary);
-    letter-spacing: -2px;
+    letter-spacing: -4px;
+    line-height: 1;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: baseline;
   }
 
-  .speakers-main-title i {
-    font-style: italic;
+  .speakers-main-title .thin {
     font-weight: 300;
+    font-style: italic;
+  }
+
+  .speakers-main-title .bold {
+    font-weight: 800;
   }
 
   .speakers-grid.pure-images {
