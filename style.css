@@ -118,16 +118,16 @@ ul {
 
 .section-title {
   font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 4.5rem;
+  font-size: 3rem;
   color: #0f172a;
-  letter-spacing: -3px;
-  line-height: 0.95;
-  margin-bottom: 4rem;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 3.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  gap: 0;
+  gap: 0.25rem;
 }
 
 .section-title .thin {
