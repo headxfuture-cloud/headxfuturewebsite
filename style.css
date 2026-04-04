@@ -815,28 +815,51 @@ ul {
     gap: 2.5rem;
     margin-top: 2.5rem;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .speakers-main-title { 
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 3.25rem; 
     margin-bottom: 3.5rem;
     gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
     letter-spacing: -2px;
+    line-height: 1.1;
+    text-align: center;
+    width: 100%;
+  }
+
+  .speakers-main-title .thin {
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .speakers-main-title .bold {
+    font-weight: 800;
   }
 
   #about .section-title { 
-    font-size: 2.25rem !important; 
+    font-size: 2.5rem !important; 
+    text-align: center;
+    width: 100%;
   }
 
   .about-tagline {
-    font-size: 1.1rem;
-    padding-left: 1rem;
-    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding: 0;
   }
 
-  .about-text p { margin-left: 0; max-width: 100%; }
-  .value-props { flex-direction: column; align-items: center; gap: 2.5rem; width: 100%; }
-  .value-item { text-align: center; }
+  .about-description p { 
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   /* CTA Responsiveness */
   .cta-grid {
@@ -847,10 +870,20 @@ ul {
   
   .cta-video-container {
     order: -1; /* Place video above text on mobile */
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
   }
 
   .cta-content h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .speakers-grid.pure-images {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0 auto;
   }
   
   /* Footer Responsiveness */
@@ -863,35 +896,6 @@ ul {
     height: 200px;
   }
 
-  .speakers-main-title {
-    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 6.5rem;
-    color: var(--text-primary);
-    letter-spacing: -4px;
-    line-height: 1;
-    margin-bottom: 6rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    align-items: baseline;
-  }
-
-  .speakers-main-title .thin {
-    font-weight: 300;
-    font-style: italic;
-  }
-
-  .speakers-main-title .bold {
-    font-weight: 800;
-  }
-
-  .speakers-grid.pure-images {
-    grid-template-columns: 1fr 1fr; /* Force 2 items per row on mobile */
-    gap: 1rem; /* Shrink the gap to fit them precisely */
-    margin-top: 2rem;
-  }
-  
   /* Countdown optimizations */
   .glass-countdown { 
     gap: 0.5rem; 
