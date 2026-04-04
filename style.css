@@ -959,6 +959,8 @@ ul {
     padding: 1.25rem 0.5rem; 
     width: 100%;
     max-width: 95vw;
+    justify-content: center;
+    margin: 1.5rem auto 0;
   }
   .countdown-item { min-width: 45px; }
   .countdown-item span { font-size: 1.75rem; }
