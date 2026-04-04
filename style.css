@@ -468,7 +468,6 @@ ul {
   box-shadow: 0 25px 60px rgba(0,0,0,0.15);
   background: #0f172a;
   aspect-ratio: 16/9;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cta-video-player {
