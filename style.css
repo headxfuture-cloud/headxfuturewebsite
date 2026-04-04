@@ -811,9 +811,15 @@ ul {
   /* Layout adjustments */
   .about-grid, .audience-partner-grid, .footer-grid { grid-template-columns: 1fr; }
   
-  .about-text { 
-    text-align: left; 
-    display: block;
+  .about-highlights {
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .speakers-main-title { 
+    font-size: 2.75rem; 
+    margin-bottom: 3rem; 
   }
 
   #about .section-title { 
@@ -856,6 +862,19 @@ ul {
   }
 
   /* Speaker Grid mobile overrides */
+  .speakers-main-title {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 5rem;
+    color: var(--text-primary);
+    letter-spacing: -2px;
+  }
+
+  .speakers-main-title i {
+    font-style: italic;
+    font-weight: 300;
+  }
+
   .speakers-grid.pure-images {
     grid-template-columns: 1fr 1fr; /* Force 2 items per row on mobile */
     gap: 1rem; /* Shrink the gap to fit them precisely */
