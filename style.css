@@ -101,14 +101,14 @@ ul {
 }
 
 .btn-glow {
-  background: linear-gradient(135deg, #3b82f6, #10b981, #facc15, #f97316, #ef4444);
+  background: #000000;
   color: white;
-  box-shadow: 0 0 20px var(--neon-glow);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .btn-glow:hover {
-  background: linear-gradient(135deg, #2563eb, #059669, #eab308, #ea580c, #dc2626);
-  box-shadow: 0 0 40px var(--neon-glow);
+  background: #1f2937;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
   transform: translateY(-2px) scale(1.02);
 }
 
