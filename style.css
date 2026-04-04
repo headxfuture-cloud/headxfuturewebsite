@@ -444,33 +444,58 @@ ul {
 }
 
 /* Speakers Grid */
-/* Speaker Graphics Grid */
-.speakers-grid.pure-images {
+.speakers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 2.5rem;
-  margin-top: 3.5rem;
+  margin-top: 4rem;
+}
+
+.speaker-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .speaker-card-graphic {
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 15px 45px rgba(0,0,0,0.08);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
-  background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
-  display: flex;
-}
-
-.speaker-card-graphic:hover {
-  transform: translateY(-12px) scale(1.02);
-  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+  box-shadow: 0 15px 45px rgba(0,0,0,0.06);
+  aspect-ratio: 9/14;
+  background: #f3f4f6;
+  margin-bottom: 1.5rem;
 }
 
 .speaker-card-graphic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
+  transition: transform 0.5s ease;
+}
+
+.speaker-card:hover .speaker-card-graphic img {
+  transform: scale(1.05);
+}
+
+.speaker-info {
+  padding: 0 0.5rem;
+}
+
+.speaker-name {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400; /* Regular */
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
+}
+
+.speaker-designation {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300; /* Thin */
+  color: var(--text-secondary);
+  line-height: 1.4;
 }
 
 /* Agenda Timeline */
@@ -880,10 +905,25 @@ ul {
     margin-bottom: 1.5rem;
   }
 
-  .speakers-grid.pure-images {
+  .speakers-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 0 auto;
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+  }
+
+  .speaker-card-graphic {
+    border-radius: 12px;
+    margin-bottom: 0.75rem;
+  }
+
+  .speaker-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .speaker-designation {
+    font-size: 0.8rem;
+    line-height: 1.2;
   }
   
   /* Footer Responsiveness */
