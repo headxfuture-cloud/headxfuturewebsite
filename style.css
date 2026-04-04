@@ -807,8 +807,22 @@ ul {
   /* Layout adjustments */
   .about-grid, .audience-partner-grid, .footer-grid { grid-template-columns: 1fr; }
   
-  .about-text { text-align: center; display: flex; flex-direction: column; align-items: center; }
-  .about-text p { margin-left: auto; margin-right: auto; max-width: 100%; }
+  .about-text { 
+    text-align: left; 
+    display: block;
+  }
+
+  #about .section-title { 
+    font-size: 2.25rem !important; 
+  }
+
+  .about-tagline {
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-text p { margin-left: 0; max-width: 100%; }
   .value-props { flex-direction: column; align-items: center; gap: 2.5rem; width: 100%; }
   .value-item { text-align: center; }
 
