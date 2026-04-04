@@ -863,6 +863,7 @@ ul {
 
   /* Speaker Grid mobile overrides */
   .speakers-main-title {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 5rem;
     font-weight: 300;
     margin-bottom: 5rem;
