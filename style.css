@@ -717,43 +717,52 @@ ul {
     border: 0;
   }
 
-  /* Looking Back Section Style */
-  .lookback-header {
-    background-color: #ff4d4d;
-    color: #fff;
-    padding: 6rem 0;
+  /* Looking Back Section Style (Exact Match Refined) */
+  #looking-back {
+    background-color: #ffffff;
+    padding: 8rem 0 4rem 0;
+    position: relative;
     overflow: hidden;
   }
 
-  .lookback-title {
-    font-size: 6rem;
-    line-height: 1;
+  .lookback-date {
+    text-align: right;
     font-weight: 800;
-    display: flex;
-    align-items: baseline;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    color: #ffffff;
-    margin: 0;
+    font-size: 2.25rem;
+    color: #ff4d4d;
+    margin-bottom: 1rem;
+    font-family: 'Outfit', sans-serif;
   }
 
-  .lookback-title .italic {
-    font-style: italic;
+  .lookback-title {
+    font-size: 7rem;
+    line-height: 0.9;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #ff4d4d !important;
+    margin-bottom: 4rem;
+    letter-spacing: -3px;
+  }
+
+  .lookback-title span {
+    display: block;
+  }
+
+  .lookback-title .thin {
     font-weight: 300;
+    font-style: italic;
     letter-spacing: -2px;
   }
 
-  .lookback-title .slash {
-    font-size: 7rem;
-    font-weight: 200;
-    opacity: 0.9;
-    font-style: italic;
-    margin-left: 0.5rem;
+  .lookback-title .bold {
+    font-weight: 800;
   }
 
   .lookback-content {
-    background: #ffffff;
-    padding-top: 6rem;
+    background: transparent;
+    padding-top: 2rem;
   }
 
   .lookback-grid {
@@ -761,7 +770,7 @@ ul {
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
     position: relative;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
   }
 
   .lookback-grid::after {
@@ -775,7 +784,7 @@ ul {
   }
 
   .lookback-column p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.7;
     color: var(--text-secondary);
     margin: 0;
@@ -790,12 +799,12 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding-bottom: 8rem;
+    padding-bottom: 6rem;
   }
 
   .gallery-item {
     position: relative;
-    border-radius: 20px;
+    border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     background: #f9fafb;
@@ -807,10 +816,6 @@ ul {
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
-  }
-
-  .gallery-item:hover img {
-    transform: scale(1.05);
   }
 
   .gallery-accent {
@@ -827,7 +832,13 @@ ul {
   .accent-yellow { background-color: #fbbf24; }
   .accent-green { background-color: #10b981; }
 
-  /* Footer responsiveness section moved below */filter: grayscale(0.2);
+  @media (max-width: 1024px) {
+    .lookback-title { font-size: 4rem; letter-spacing: -1px; }
+    .lookback-date { font-size: 1.5rem; }
+    .lookback-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .lookback-grid::after { display: none; }
+    .lookback-gallery { grid-template-columns: 1fr; gap: 1.5rem; }
+  }filter: grayscale(0.2);
 }
 
 .contact-details p {
