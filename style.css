@@ -648,26 +648,27 @@ ul {
 
 .social-links {
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .social-links a {
-  color: var(--text-secondary);
+  color: #000000;
   transition: var(--transition);
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  justify-content: center;
 }
 
 .social-links a:hover {
   color: var(--accent-primary);
-  transform: translateX(5px);
+  transform: translateY(-3px) scale(1.1);
 }
 
-.social-links [data-lucide] {
-  width: 24px;
-  height: 24px;
+.social-links svg {
+  width: 28px;
+  height: 28px;
+  stroke-width: 2px;
 }
 
 .footer-bottom {
