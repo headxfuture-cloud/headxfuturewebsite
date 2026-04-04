@@ -443,7 +443,30 @@ ul {
   text-align: center;
 }
 
-/* Speakers Grid */
+  .speakers-main-title {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 7.5rem;
+    color: #0f172a;
+    letter-spacing: -6px;
+    line-height: 0.9;
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0;
+  }
+
+  .speakers-main-title .thin {
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .speakers-main-title .bold {
+    font-weight: 800;
+  }
+
+  /* Speakers Grid */
 .speakers-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -843,28 +866,20 @@ ul {
     justify-content: flex-start;
   }
 
-  .speakers-main-title { 
-    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 3.25rem; 
-    margin-bottom: 3.5rem;
-    gap: 0.5rem;
-    display: flex;
+  .about-highlights {
+    gap: 2.5rem;
+    margin-top: 2.5rem;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-    letter-spacing: -2px;
-    line-height: 1.1;
+    justify-content: flex-start;
+  }
+
+  .speakers-main-title { 
+    font-size: 3.5rem; 
+    margin-bottom: 3rem;
+    gap: 0.25rem;
     text-align: center;
-    width: 100%;
-  }
-
-  .speakers-main-title .thin {
-    font-weight: 300;
-    font-style: italic;
-  }
-
-  .speakers-main-title .bold {
-    font-weight: 800;
+    align-items: center;
+    letter-spacing: -2px;
   }
 
   #about .section-title { 
