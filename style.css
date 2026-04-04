@@ -155,35 +155,59 @@ ul {
   max-width: 600px;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  align-items: center;
+  gap: 5rem;
+}
+
+.about-text {
+  position: relative;
+  z-index: 2;
+}
+
 .about-graphic {
-  position: absolute;
-  top: 50%;
-  right: -2%;
-  transform: translateY(-50%);
-  width: 600px;
-  height: 600px;
-  background: url('/CHAIR.png') no-repeat center;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: url('/CHAIR.png') no-repeat right center;
   background-size: contain;
   opacity: 1;
   pointer-events: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+  .about-grid {
+    gap: 3rem;
+  }
+  
   .about-graphic {
-    opacity: 0.2;
-    right: -10%;
-    width: 450px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: 4rem;
+  }
+  
+  .about-graphic {
+    display: block;
+    height: 350px;
+    margin-top: 2rem;
   }
 }
 
 @media (max-width: 768px) {
-  .about-graphic {
-    display: none;
-  }
-  
   #about {
     padding: 6rem 0;
-    text-align: left;
+  }
+  
+  .about-graphic {
+    height: 300px;
   }
 }
 
