@@ -155,6 +155,34 @@ ul {
   max-width: 600px;
 }
 
+.about-highlights {
+  display: flex;
+  gap: 3.5rem;
+  margin-top: 3.5rem;
+}
+
+.highlight-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ff4d4d;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+.highlight-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1.25fr 1fr;
@@ -814,6 +842,12 @@ ul {
   .about-text { 
     text-align: left; 
     display: block;
+  }
+
+  .about-highlights {
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
   }
 
   #about .section-title { 
