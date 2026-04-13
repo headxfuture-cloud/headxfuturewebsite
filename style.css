@@ -112,6 +112,35 @@ ul {
   transform: translateY(-2px) scale(1.02);
 }
 
+.btn-green-pill {
+  background: #22c55e;
+  color: white !important;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);
+  text-transform: uppercase;
+  border: none;
+}
+
+.btn-green-pill:hover {
+  background: #16a34a;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(34, 197, 94, 0.4);
+}
+
+.btn-green-pill .bold {
+  font-weight: 800;
+}
+
+.btn-green-pill .thin {
+  font-weight: 300;
+  font-style: italic;
+  font-family: inherit;
+}
+
 .section {
   padding: 6rem 0;
 }
@@ -296,6 +325,14 @@ ul {
   object-fit: contain;
   margin: 0 auto;
   display: block;
+}
+
+.hero-cta-button {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 20;
 }
 
 /* Glassmorphism Countdown */
@@ -850,6 +887,15 @@ ul {
     margin-top: -3rem; /* Drag UI physically higher over image */
     position: relative;
     z-index: 10;
+  }
+
+  .hero-cta-button {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-cta-button .btn-large {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
   }
 
   /* Layout adjustments */
