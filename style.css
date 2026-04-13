@@ -315,6 +315,8 @@ ul {
   padding-top: 100px; /* Buffer for fixed nav */
   padding-bottom: 60px;
   background-color: var(--bg-primary);
+  overflow: hidden; /* Prevent horizontal bleed globally */
+  position: relative;
 }
 
 .hero-banner-asset {
@@ -871,7 +873,9 @@ ul {
     min-height: auto; /* Drop arbitrary 100vh constraint */
     padding-top: 100px;
     padding-bottom: 60px;
-    overflow-x: hidden; /* Lock horizontal stretch */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
   }
   .hero-banner-asset {
     max-width: 120vw; /* Override basic containment */
