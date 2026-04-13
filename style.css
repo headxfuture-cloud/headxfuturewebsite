@@ -328,7 +328,23 @@ ul {
 
 @media (max-width: 768px) {
   .live-status {
+    margin-left: 1rem;
+    margin-right: auto;
+    padding: 0.35rem 0.8rem;
+    gap: 0.4rem;
+  }
+  .live-text {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .desktop-only {
     display: none;
+  }
+  .live-status {
+    margin-left: 0.5rem;
+    padding: 0.35rem 0.6rem;
   }
 }
 
