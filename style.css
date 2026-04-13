@@ -887,10 +887,17 @@ ul {
     margin-top: -3rem; /* Drag UI physically higher over image */
     position: relative;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .hero-cta-button {
     margin-bottom: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .hero-cta-button .btn-large {
