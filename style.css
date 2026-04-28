@@ -473,20 +473,47 @@ ul {
   display: block;
 }
 
-.fade-up {
+.fade-up, .fade-in, .scale-up {
   opacity: 0;
-  animation: elegantRise 1s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+  transition: opacity 0.5s ease;
+}
+
+.fade-up.visible {
+  animation: elegantRise 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.fade-in.visible {
+  animation: fadeIn 1s ease forwards;
+}
+
+.scale-up.visible {
+  animation: scaleUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes elegantRise {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -713,6 +740,148 @@ ul {
   color: #0f172a;
   font-weight: 500;
 }
+
+/* Topics Section - Inspired by headxtopic.png */
+.topics-section {
+  background-color: #ff3b30; /* Vibrant Red */
+  padding: 6rem 0;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.topic-day-header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.day-badge {
+  background-color: #facc15; /* Yellow */
+  color: #000;
+  padding: 0.5rem 1.25rem;
+  font-weight: 800;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.time-badge {
+  background-color: #ffffff;
+  color: #000;
+  padding: 0.5rem 1.25rem;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 1.25rem;
+}
+
+.topics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.topic-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.topic-bar {
+  width: 12px;
+  height: 3.5rem;
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+
+.topic-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.topic-title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  opacity: 0.9;
+}
+
+.topic-subtitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-top: 2px;
+}
+
+.bar-green { background-color: #22c55e; }
+.bar-blue { background-color: #3b82f6; }
+
+.topics-footer {
+  margin-top: 5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.topics-footer-title {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+}
+
+.topics-disclaimer {
+  font-size: 0.85rem;
+  font-style: italic;
+  opacity: 0.8;
+  max-width: 400px;
+}
+
+@media (max-width: 1024px) {
+  .topics-grid {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+}
+
+  @media (max-width: 768px) {
+    .topics-footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    
+    .topics-footer-title {
+      font-size: 3.5rem;
+    }
+    
+    .topic-subtitle {
+      font-size: 1.25rem;
+    }
+
+    .focus-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    .focus-title {
+      font-size: 1.75rem;
+      margin-bottom: 2rem;
+    }
+    
+    .agenda-focus {
+      padding: 2rem;
+    }
+  }
 
 /* Footer Section */
 .cta-video-section {
